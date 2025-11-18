@@ -25,7 +25,7 @@ $('#nextPhoto').on('click',showNextPhoto)
 
 // Function to fetch JSON data and store it in mImages
 function fetchJSON () {
-  // Use $.ajax here to request the JSON data from mUrl
+  // Use $.ajax here to ask for the JSON data from mUrl
   $.ajax({
     type: "GET",
     url: mUrl,
