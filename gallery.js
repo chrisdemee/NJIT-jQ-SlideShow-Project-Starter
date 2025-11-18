@@ -45,9 +45,10 @@ function swapPhoto () {
   // Update the #photo element's src attribute with the current image's path
   $('#photo').attr('src',`${mImages[mCurrentIndex].imgPath}`)
   // Update the .location, .description, and .date elements with the current image's details
-  $('.location').text(`Album: ${mImages[mCurrentIndex].imgLocation}`)
-  $('.description').text(`Artist: ${mImages[mCurrentIndex].description}`)
-  $('.snow').text(`Snow in native language: ${mImages[mCurrentIndex].Snow}`)
+ $('.location').text(`Album: ${mImages[mCurrentIndex].imgLocation}`)
+$('.description').text(`Artist: ${mImages[mCurrentIndex].description}`)
+$('.date').text(`Release Date: ${mImages[mCurrentIndex].date}`)
+
 }
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
